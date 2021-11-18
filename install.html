@@ -53,7 +53,7 @@
         <h2>Harps - Installation</h2>
         <p>
           Harps isn't quite ready for prime-time yet, development of the
-          generally available release continuing. We are aiming for a Q1 2022
+          generally available release is continuing. We are aiming for a Q1 2022
           release.
         </p>
         <p>For more information please refer re-read this site.</p>
@@ -65,6 +65,49 @@
           on Ubuntu, Arch, Debian, etc. A Harps install includes the CLI and
           SDK.
         </p>
+        <p>Supported distributions:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Distribution</th>
+              <th>Supported versions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alpine</td>
+              <td>3.12, 3.13, 3.14</td>
+            </tr>
+            <tr>
+              <td>CentOS</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>Debian</td>
+              <td>9, 10, 11</td>
+            </tr>
+            <tr>
+              <td>Fedora</td>
+              <td>33, 34, 35</td>
+            </tr>
+            <tr>
+              <td>openSUSE</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>RHEL</td>
+              <td>7, 8</td>
+            </tr>
+            <tr>
+              <td>SLES</td>
+              <td>12 SP2, 15</td>
+            </tr>
+            <tr>
+              <td>Ubuntu</td>
+              <td>16.04, 18.04, 20.04, 21.04, 21.10</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div>
         <h2>MacOS</h2>
@@ -99,6 +142,7 @@
           "Segoe UI Symbol";
         display: grid;
         grid-template-rows: auto 1fr;
+        grid-template-columns: minmax(120px, 1fr);
       }
       nav {
         width: 100%;
@@ -107,6 +151,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        grid-row: 1;
+        grid-column: 1;
         box-shadow: 0 1px 1px rgb(0 0 0 / 8%), 0 2px 2px rgb(0 0 0 / 12%),
           0 4px 4px rgb(0 0 0 / 16%);
       }
@@ -142,6 +188,8 @@
         min-height: 100%;
         padding: 42px 64px;
         padding-top: 28px;
+        grid-row: 2;
+        grid-column: 1;
         box-shadow: 0 1px 1px rgb(0 0 0 / 8%), 0 2px 2px rgb(0 0 0 / 12%),
           3px 4px 4px rgb(0 0 0 / 16%);
         font-size: 18px;
@@ -200,6 +248,27 @@
       nav li a:hover {
         background: #226764;
         color: white;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th {
+        text-align: left;
+        line-height: 44px;
+        border-bottom: 1px solid #feffee;
+        padding-left: 8px;
+      }
+      th:nth-child(2) {
+        font-weight: 400;
+      }
+      td {
+        line-height: 40px;
+        border: none;
+        padding-left: 8px;
+      }
+      tr:nth-child(even) td {
+        background-color: #1f7e79;
       }
     </style>
     <script>
